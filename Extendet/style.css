@@ -1,0 +1,596 @@
+@font-face {
+    font-family: 'pt_sans';
+    src: url('font/pt-sans-webfont.eot');
+    src: url('font/pt-sans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/pt-sans-webfont.woff2') format('woff2'),
+         url('font/pt-sans-webfont.ttf') format('truetype'),
+         url('font/pt-sans-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+img{
+  border: none;
+}
+
+a{
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.clr{
+	clear:both;
+}
+
+.img-lefter{
+	background: none repeat scroll 0 0 #FFFFFF;
+  float: left;
+  padding: 10px 20px 10px 0;
+  position: relative;
+  z-index: 10;
+}
+
+body{
+  background: #e9e9e9 url(images/body-bg.jpg);
+  border-top: 5px solid #d7a229;
+  color: #333;
+  line-height: 1.8;
+}
+
+.karkas{
+  background: #fff;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header{
+  background: url(images/head-bg.jpg);
+  overflow: hidden;
+  padding: 35px 30px 0 30px;
+}
+
+.logo{
+  float: left;
+}
+
+.head-contakt{
+  float: right;
+  color: #d4d4d4;
+  font-size: 12px;
+  font-family:"Droid Serif";
+  margin-bottom: 3px;
+}
+
+.head-contakt a{
+  color: #d4d4d4;
+}
+
+.head-contakt img{
+  vertical-align: baseline;
+  margin: 0 7px;
+}
+
+.head-soc{
+  clear: right;
+  float: right;
+  margin-bottom: 35px;
+}
+
+.head-soc img{
+  margin-left: 5px;
+}
+
+.menu{
+  clear: both;
+  float: left;
+  width: 100%;
+  font: bold 12px "Droid Serif";
+  border-top: 1px solid #494d4e;
+  border-left: 1px solid #494d4e;
+  border-right: 1px solid #494d4e;
+  border-radius: 5px 5px 0 0;
+  background: #404446; /* Old browsers */
+  background: -moz-linear-gradient(top,  #404446 0%, #383c3d 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#404446), color-stop(100%,#383c3d)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #404446 0%,#383c3d 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #404446 0%,#383c3d 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #404446 0%,#383c3d 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #404446 0%,#383c3d 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404446', endColorstr='#383c3d',GradientType=0 ); /* IE6-9 */
+
+}
+
+.menu ul{
+  list-style: none;
+}
+
+.menu ul li{
+  float: left;
+  border-left: 1px solid #494e50;
+  border-right: 1px solid #2a2d2f;
+  position: relative;
+  top:-1px;
+}
+
+.menu ul li:first-child{
+  border-left: none;
+}
+
+.menu ul li:last-child{
+  border-right: none;
+}
+
+
+.menu ul li a{
+  color: #fff;
+  padding: 13px 17px;
+  display: block;
+  text-shadow: 1px -1px 1px #000;
+  border-bottom: 4px solid #383c3e;
+  border-top: 1px solid #484c4e;
+}
+
+.menu ul li a:hover{
+  border-bottom: 4px solid #d7a229;
+  text-decoration: none;
+  border-top: 1px solid #454a4c;
+  background: #3b3f41; /* Old browsers */
+  background: -moz-linear-gradient(top,  #3b3f41 0%, #252528 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b3f41), color-stop(100%,#252528)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #3b3f41 0%,#252528 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #3b3f41 0%,#252528 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #3b3f41 0%,#252528 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #3b3f41 0%,#252528 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3f41', endColorstr='#252528',GradientType=0 ); /* IE6-9 */
+}
+
+.search{
+  padding: 10px 5px 10px 18px;
+  float: right;
+}
+
+.search input{
+  float: left;
+}
+
+.search-txt{
+  border-radius: 15px;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 2px solid #a5a6a7;
+  color: #959595;
+  font: bold 12px "Droid Serif";
+  width: 130px;
+  padding: 4px 10px;
+  margin-right: 10px;
+}
+
+.under-slider{
+  background: url('images/naklon-bg.jpg');
+  padding: 45px 30px;
+  margin-bottom: 40px;
+}
+
+.under-slider h1{
+  font: normal 24px "Droid Serif";
+  margin-bottom: 20px;
+}
+
+.under-slider p{
+  font-size: 13px;
+  font-family: pt_sans;
+}
+
+.content-main{
+  padding: 0 30px 60px 30px;
+  border-bottom: 5px solid #d7a229;
+  background: url('images/naklon-bg.jpg') bottom repeat-x;
+  font-family: pt_sans;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.content-main p{
+  margin-bottom: 20px;
+}
+
+.whatwedo{
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.whatwedo div{
+  float: left;
+  width: 212px;
+  margin-left: 30px;
+}
+
+.whatwedo div:first-child{
+  margin-left: 0px;
+}
+
+.whatwedo div h1{
+  font: 16px "Droid Serif";
+  margin-bottom: 15px;
+  background: url('images/naklon-bg.jpg') 0 6px repeat-x;
+}
+
+.whatwedo div h1 span{
+  background: #fff;
+  padding-right: 15px;
+}
+
+.center-n{
+  text-align: center;
+  font-size: 24px;
+  font: 24px "Droid Serif";
+  background: url('images/naklon-bg.jpg') center repeat-x;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.hnc{
+  background: #fff;
+  padding: 0 15px;
+}
+
+.hnl{
+  position: absolute;
+  right: 0;
+  top: 6px;
+  font-size: 13px;
+  font-family: pt_sans;
+  color: #d7a229;
+  background: #fff;
+  padding-left: 15px;
+}
+
+.hnl a{
+  color: #d7a229;
+}
+
+.our-works-main{
+  overflow: hidden;
+  margin-bottom: 45px;
+}
+
+.our-works{
+  float: left;
+  margin-left: 29px;
+  background: url('images/naklon-bg.jpg');
+  padding: 0 5px 0 0;
+  width: 208px;
+  position: relative;
+}
+
+.our-works:first-child{
+  margin-left: 0;
+}
+
+.our-work-short{
+  position: absolute;
+  text-align: center;
+  border: 5px solid #afafaf;
+  width: 198px;
+  height: 198px;
+  background: rgba(137, 137, 137, 0.2);
+  display: none;
+}
+
+.our-work-short img{
+  margin: 70px 0 15px 0;
+}
+
+.our-work-short h3{
+  font: 12px "Droid Serif";
+  color: #252525;
+  margin-bottom: 5px;
+}
+
+.our-work-short p{
+  font-size: 10px;
+  color: #555555;
+}
+
+a.our-work-href{
+  display: block;
+}
+
+a:hover.our-work-href .our-work-short{
+  display: block;
+}
+
+.advance{
+  overflow: hidden;
+}
+
+.why-us{
+  width: 49%;
+  float: left;
+}
+
+.our-service{
+  width: 49%;
+  float: right;
+}
+
+.img-righter {
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+.footer{
+  background: url('images/naklon-bg.jpg');
+  margin-top: 20px;
+  font-size: 12px;
+  color:#707070;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow: hidden;
+  padding: 20px 20px 20px 30px;
+}
+
+.copy{
+  float: left;
+}
+
+.ftrmenu{
+  float: right;
+}
+
+.ftrmenu a{
+  color: #707070;
+  margin: 0 10px;
+}
+
+.page-title{
+	background:url(images/naklon-bg.jpg);
+  padding:25px 30px;
+  overflow:hidden;
+  margin-bottom:50px;
+}
+
+.page-title h1{
+  float:left;
+  font:normal 24px "Droid Serif";
+}
+
+.page-title-map{
+	float:right;
+  font:italic 12px pt_sans;
+  margin:7px 0 0 0;
+  color:#363636;
+}
+
+.page-title-map a{
+	color:#363636;
+}
+
+.our-team-main{
+	overflow:hidden;
+  margin-bottom:25px;
+}
+
+.our-team-main div{
+	width:273px;
+  padding:0 10px;
+  float:left;
+  margin-left:30px;
+}
+
+.our-team-main div:first-child{
+	width:273px;
+  padding:0 10px;
+  float:left;
+  margin-left:0px;
+}
+
+.our-team-main div h2{
+	font:normal 14px "Droid Serif";
+  overflow:hidden;
+  line-height:2.3;
+  margin-bottom:20px;
+}
+
+.our-team-main div h2 span{
+	font:italic 12px pt_sans;
+  color:#898989;
+}
+
+.our-team-main div h2 img{
+	float:left;
+  margin-right: 20px;
+}
+
+.our-clients{
+	overflow:hidden;
+}
+
+.our-clients a{
+	float:left;
+  margin-left:15px;
+}
+
+.our-clients a:first-child{
+	float:left;
+  margin-left:0px;
+}
+
+/*		PORTFOLIO		*/
+
+.page-nav{
+	background:url(images/naklon-smal-bg.jpg) bottom repeat-x;
+  overflow:hidden;
+  margin: 0 30px 50px 30px;
+}
+
+.page-nav ul{
+	background:url(images/naklon-smal-bg.jpg) top repeat-x;
+  overflow:hidden;
+  list-style:none;
+}
+
+.page-nav ul li{
+	float:left;
+  font:15px 'pt_sans';
+}
+
+.page-nav ul li a{
+	display:block;
+  padding:15px 20px;
+  color:#333;
+}
+
+.page-nav ul li a:hover{
+	border-bottom:5px solid #d7a229;
+  color:#d7a229;
+  text-decoration:none;
+  padding:15px 20px 10px 20px;
+}
+
+.artical-anons-main{
+	overflow:hidden;
+  margin-bottom:30px;
+  background:url(images/naklon-smal-bg.jpg) bottom repeat-x;
+  padding:0 0 5px 0;
+}
+
+.artical-img{
+	float: left;
+  margin: 0 30px 0 0;
+	}
+
+.artical-img{
+	float:left;
+  margin:0 30px 0 0;
+}
+
+.artical-head{
+	margin-top:10px;
+}
+
+.artical-head h1{
+	font:normal 16px "Droid Serif";
+  color:#363636;
+  margin-bottom:10px;
+}
+
+.artical-head p{
+	font: 12px "pt_sans";
+  color:#555555;
+}
+
+a.read-more{
+	display:inline-block;
+  width:101px;
+  background:url(images/read-more.jpg) 0 0 no-repeat;
+  font:bold 12px "Droid Serif";
+  text-align:center;
+  color:#404040;
+  padding:7px 0;
+}
+
+a:hover.read-more{
+	 background:url(images/read-more.jpg) 0 -29px no-repeat;
+   text-decoration:none;
+}
+
+.pager{
+	list-style:none;
+  overflow:hidden;
+  float:right;
+}
+
+.pager li{
+  float:left;
+  font:bold 14px pt_sans;
+}
+
+.pager li a{
+	color:#363636;
+  display:block;
+  padding:5px 10px;
+}
+
+.pager li a.now{
+	color:#fff;
+  background:#d7a229;
+  margin:0 10px;
+}
+
+/*		PORTFOLIO-SINGLE		*/
+
+.slider-portfolio{
+	background:url(images/naklon-bg.jpg);
+  padding:30px 30px 0 30px;
+  overflow:hidden;
+  margin-bottom:50px;
+}
+
+.slider-portfolio .flexslider{
+	border-bottom:none;
+}
+
+.slider-portfolio .flex-control-nav{
+	display:none;
+}
+
+.content-left{
+	width:710px; float:left;
+}
+
+.projeact-descrip{
+	font:normal 16px "Droid Serif";
+  background:url(images/naklon-bg.jpg) left 12px repeat-x;
+  margin-bottom:20px;
+}
+
+.projeact-descrip img{
+	vertical-align:bottom;
+  margin-right:15px;
+}
+
+.projeact-descrip span{
+	background:#fff;
+  padding:0 20px 0 0;
+}
+
+.right-bar{
+	width:200px;
+  float:right;
+  padding:7px 0 0 0;
+}
+
+.right-bar h3{
+		font:normal 16px "Droid Serif";
+    background:url(images/naklon-bg.jpg) left center repeat-x;
+    margin-bottom:20px;
+}
+
+.right-bar h3 span{
+	background:#fff;
+  padding:0 20px 0 0;
+}
+
+.right-bar ul{
+	list-style:none;
+  margin:0 0 30px 0;
+}
+
+.right-bar a{
+	color:#333;
+}
+
+.right-bar a:hover{
+	color:#d7a229;
+  text-decoration:none;
+}

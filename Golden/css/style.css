@@ -1,0 +1,539 @@
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+/*Fonts end*/
+
+.clearfix:before, .clearfix:after{
+  clear: both;
+  content: '';
+  display: block;
+}
+
+
+header{
+  background:url('../images/header.jpg') no-repeat top center;
+
+  width: 100%;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+
+header .container .row{
+  margin-left: 0;
+  margin-right: 0
+}
+
+header .navbar-header button{
+  height: 50px;
+  width: 50px;
+}
+
+.logo-section{
+  padding-top: 45px;
+  float:left;
+}
+
+.navbar-brand{
+  padding-top:25px;
+}
+
+.navbar-nav{
+  float: right;
+  display: inline-block;
+}
+
+.navbar-nav{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-nav >li{
+  float: left;
+}
+
+.navbar-nav >li>a{
+  display: inline-block;
+  color: #fff;
+  font: 14px / 41px 'Monserrat', sans-serif;
+  font-weight:bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 0 45px;
+  height: 70px;
+
+}
+
+.navbar-nav >li>a:last-child{
+  margin-right: 0px;
+}
+
+
+.navbar-nav >li>a:hover{
+  color:#fed136;
+  text-decoration: underline;
+  background:none;
+}
+
+header span{
+  font:40px / 40px 'Droid Serif';
+  letter-spacing:-2px;
+  font-family: 'Droid Serif', serif;
+  font-style: italic;
+  display: inline-block;
+  padding-top: 205px;
+}
+
+header h1{
+  font:75px / 75px 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px 0 45px 0;
+}
+
+header button, .contact button{
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  border: none;
+  border-radius: 3px;
+  font: 18px / 18px 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header button:hover, .contact button:hover{
+  background-color: red;
+}
+
+header button{
+    margin-bottom: 160px;
+}
+
+.contact button{
+  margin-top: 1px;
+  margin-bottom: 110px;
+}
+
+.services, .about_us, .sponsors{
+  text-align: center;
+}
+
+.services h2, .portfolio h2, .about_us h2, .amazing h2, .contact h2{
+  padding: 100px 0 0 0;
+  font:40px / 65px 'Montserrat';
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.services p, .portfolio p, .about_us p, .amazing p, .contact p{
+  font:19px / 16px 'DroidSerif';
+  color: #777777;
+  font-style: italic;
+  padding-bottom: 70px;
+}
+
+.services .col-md-4 p {
+  font: 18px / 18px 'Montserrat';
+  font-weight:bold;
+  color: #222222;
+  padding: 20px 0 15px 0;
+  margin: 0;
+}
+
+.services .col-md-4 span{
+  display: inline-block;
+  font:14px / 22px 'Roboto Slab'; /* поміняти шрифт   */
+  font-weight: 400;
+  color: #777777;
+  padding-bottom: 115px;
+}
+
+.portfolio, .amazing{
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.portfolio img{
+  width: 100%;
+  height: auto;
+}
+
+.portfolio .col-md-4 p{
+  font: 18px / 18px 'Montserrat';
+  font-weight:bold;
+  color: #333333;
+  padding: 25px 0 5px 0;
+  margin: 0;
+
+}
+
+.portfolio .col-md-4 span{
+  display: inline-block;
+  font:14px 'Droid Serif';
+  font-style: italic;
+  color: #737373;
+  padding-bottom: 25px;
+}
+
+.portfolio .block{
+  padding-bottom: 30px;
+}
+
+.portfolio .ramka{
+  padding-bottom: 120px;
+}
+
+.serv-block{
+  background: #fff;
+}
+
+.about_us .col-md-4 p, .about_us .date p{
+  font: 18px / 20px 'Montserrat';
+  font-weight:bold;
+  color: #222222;
+  padding: 5px 0 15px 0;
+  margin: 0;
+  text-align: right;
+}
+
+.about_us .date p{
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.about_us .col-md-4 span{
+  display: inline-block;
+  font:14px / 24px 'Roboto Slab';
+  font-weight: 400;
+  color: #777777;
+}
+
+.about_us .col-md-4 span{
+  padding-bottom: 90px;
+}
+
+.about_us .line-right span, .about_us .line-right .col-md-4 p, .about_us .line-right .date p{
+  text-align: right;
+}
+
+.about_us .line-left span, .about_us .line-left .col-md-4 p, .about_us .line-left .date p{
+  text-align: left;
+}
+
+
+.about_us .line-left, .about_us .line-right{
+  min-height: 280px;
+}
+.about_us .center{
+  padding-bottom: 120px;
+}
+
+.amazing .col-md-4 .text p {
+  font: 16px / 16px 'Montserrat';
+  font-weight:bold;
+  color: #222222;
+  padding: 15px 0 5px 0;
+  margin: 0;
+}
+
+.amazing .col-md-4 .text span {
+  display: inline-block;
+  font:14px 'Roboto Slab';
+  font-weight: 400;
+  color: #777777;
+  padding-bottom: 10px;
+}
+
+.text{
+  padding: 0;
+  margin: 0;
+}
+
+.social1{
+  display: inline-block;
+  background-image:url('../images/social1.png');
+  margin: 0 5px 0 0;
+  height: 41px;
+  width: 41px;
+}
+
+.social1:hover, .footer .social1:hover{
+  background: url('../images/social1_hover.png');
+}
+
+.social2{
+  display: inline-block;
+  background-image:url('../images/social2.png');
+  margin: 0 5px 0 0;
+  height: 41px;
+  width: 41px;
+}
+
+.social2:hover, .footer .social2:hover{
+  background: url('../images/social2_hover.png');
+}
+
+.social3{
+  display: inline-block;
+  background-image:url('../images/social3.png');
+  padding: 0;
+  height: 41px;
+  width: 41px;
+}
+
+.social3:hover, .footer .social3:hover{
+  background: url('../images/social3_hover.png');
+}
+
+.social4{
+  display: inline-block;
+  background-image:url('../images/social4.png');
+  padding: 0;
+  height: 41px;
+  width: 41px;
+}
+
+.social4:hover, .footer .social4:hover{
+  background: url('../images/social4_hover.png');
+}
+
+.amasing_text{
+  display: inline-block;
+  width: 50%;
+}
+
+.amasing_text p{
+  font:16px 'Roboto Slab';
+  font-weight: 400;
+  color: #777777;
+  padding-top: 45px;
+  padding-bottom: 105px;
+}
+
+.sponsors img{
+  padding: 60px 20px;
+}
+
+.contact{
+  background:url('../images/contact.jpg') no-repeat top center;
+  width: 100%;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+}
+
+.forma input{
+  text-transform: uppercase;
+  height: 50px;
+  color: #bbb;
+  font: 14px 'Monserrat', sans-serif;
+  font-weight:bold;
+  margin-bottom: 28px;
+}
+
+.forma textarea.form-control{
+  margin-bottom: 20px;
+  display: inline-block;
+  color: #bbb;
+  font: 14px 'Monserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight:bold;
+  height: 206px;
+  padding: 15px 0 0 15px;
+}
+
+.footer{
+  text-align: center;
+  display: inline-block;
+  color:#fff;
+  padding: 10px;
+  width: 100%;
+}
+
+.footer .text{
+  font:14px / 22px 'Monserrat', sans-serif;
+  color: #555;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.footer .social{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 6px;
+}
+
+.footer .social1{
+  background-image:url('../images/social1_footer.png');
+}
+
+.footer .social2{
+  background-image:url('../images/social2_footer.png');
+}
+
+.footer .social3{
+  background-image:url('../images/social3_footer.png');
+  margin: 0 5px 0 0;
+}
+
+.footer .social4{
+  background-image:url('../images/social4_footer.png');
+}
+@media (min-width: 769px) and (max-width:992px){
+  .about_us .line-right .date p, .about_us .line-left .date p{
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .about_us .line-right .col-md-4 p, .about_us .line-left .col-md-4 p{
+    text-align: center;
+  }
+
+  .about_us .line-right span, .about_us .line-left span{
+    text-align: justify;
+    padding-bottom: 50px;
+  }
+
+  .about_us .center, .portfolio .ramka, .services .col-md-4 span{
+    padding-bottom: 50px;
+  }
+
+  .amasing_text{
+    width: 100%;
+  }
+
+  .amazing .block {
+    padding-bottom: 30px;
+  }
+
+  header button, .contact button {
+    margin-bottom: 25px;
+  }
+
+  .services h2, .portfolio h2, .about_us h2, .amazing h2, .contact h2 {
+    padding: 35px 0 0;
+  }
+
+  .services p, .portfolio p, .about_us p, .amazing p, .contact p {
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+
+  .sponsors img {
+    padding: 20px 10px;
+  }
+
+  .portfolio .block:last-child{
+    padding-bottom: 0px;
+  }
+
+  .nav{
+    float: right;
+  }
+
+  .nav>li>a{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  header button, .contact button {
+    margin-bottom: 25px;
+    width: 180px;
+    height: 40px;
+    font: bold 14px "Montserrat";
+  }
+
+  .forma input {
+    height: 35px;
+    margin-bottom: 15px;
+    font: bold 12px "Monserrat",sans-serif;
+  }
+
+  .forma textarea.form-control {
+    height: 150px;
+    font: bold 12px "Monserrat",sans-serif;
+  }
+
+  .services h2, .portfolio h2, .about_us h2, .amazing h2, .contact h2 {
+    padding: 35px 0 0;
+    font: bold 25px "Montserrat";
+  }
+
+  .services p, .portfolio p, .about_us p, .amazing p, .contact p {
+    padding-bottom: 20px;
+    font: italic 16px/16px "DroidSerif";
+    padding-top: 5px;
+  }
+
+  .sponsors img {
+    padding: 20px 0;
+  }
+
+  .amasing_text{
+    width: 100%;
+  }
+
+  .amasing_text p {
+    padding-top: 0px;
+  }
+
+  .amazing .block {
+    padding-bottom: 30px;
+  }
+
+  .about_us .line-right .date p, .about_us .line-left .date p{
+    text-align: center;
+    padding-top: 15px;
+  }
+
+  .about_us .line-right .col-md-4 p, .about_us .line-left .col-md-4 p{
+    text-align: center;
+  }
+
+  .about_us .line-right span, .about_us .line-left span{
+    text-align: justify;
+    padding-bottom: 50px;
+  }
+
+  .about_us .center, .portfolio .ramka, .services .col-md-4 span{
+    padding-bottom: 50px;
+  }
+
+  .portfolio .block:last-child{
+    padding-bottom: 0px;
+  }
+
+  header button {
+    margin-bottom: 50px;
+  }
+
+  header span{
+    font: italic 20px "Droid Serif",serif;
+    letter-spacing: 0px;
+    padding-top: 40px;
+  }
+
+  header h1{
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font: bold 40px "Montserrat",sans-serif;
+  }
+
+  .nav, .navbar-nav > li{
+    float: none;
+  }
+
+}

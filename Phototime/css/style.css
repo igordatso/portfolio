@@ -1,0 +1,504 @@
+/*Fonts*/
+@font-face {
+  font-family: 'Gotham Rounded';
+  url("../fonts/Gotham-Rounded-Bold_21016.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Fonts end*/
+
+.clearfix:before, .clearfix:after{
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.container{
+  width: 1024px;
+  margin: 0 auto;
+}
+
+header{
+  background:url('../images/fon1.jpg') no-repeat top center;
+  height: 785px;
+  width: 100%;
+  background-size: cover;
+}
+
+header nav{
+  padding-top: 40px;
+}
+
+header nav ul, .social ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+header nav ul li{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 35px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font: 16px / 16px 'Gotham Rounded';
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.7s;
+}
+
+header nav ul li a:hover{
+  color: #ff0000;
+  transition: 0.7s;
+}
+
+header nav ul li:nth-child(3) a{
+  margin: 0 65px;
+}
+
+header nav ul li:nth-child(3) a:hover{
+  opacity: 0.5;
+}
+
+.header-block{
+  text-align: center;
+  color: #fff;
+  margin-top: 250px;
+}
+
+.header-block h1{
+  margin: 0;
+  font: 36px / 46px 'Gotham Rounded';
+  font-weight: bold;
+  letter-spacing: 6px;
+}
+
+.header-block p{
+  margin: 0;
+  font: 16px / 26px 'Gotham Rounded';
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.header-block button{
+  background: #16a085;
+  border: none;
+  border-radius: 4px;
+  font: 12px / 12px 'Gotham Rounded';
+  font-weight: bold;
+  padding: 20px 30px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  transition: 0.7s;
+}
+
+.header-block button:hover{
+  background-color: red;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+.social{
+  margin-top: 240px;
+  margin-bottom: 30px;
+}
+
+.social ul li{
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.social ul li a{
+  text-decoration: none;
+  transition: 0.7s;
+}
+
+.social ul li a:hover{
+  opacity: 0.5;
+  transition: 0.7s;
+}
+
+.box1{
+  background-color: #f5f6f7;
+}
+
+.text1 h3{
+  font: 16px / 26px 'Gotham Rounded';
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform:uppercase;
+  color: #16a085;
+}
+
+.text1 p{
+  margin: 0;
+  font: 12px / 24px 'Myriad Pro';
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #373737;
+}
+
+.box1 button{
+  width: 190px;
+  background: #16a085;
+  border: none;
+  border-radius: 4px;
+  font: 12px / 12px 'Gotham Rounded';
+  font-weight: bold;
+  padding: 20px 30px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  color: #fff;
+  transition: 0.7s;
+}
+
+.box1 button:hover{
+  background-color: red;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+.hend{
+    background:url('../images/handle.png') no-repeat bottom right;
+    padding: 90px 0;
+}
+
+.box2{
+  height: 560px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.text2 h3{
+  font: 16px / 26px 'Gotham Rounded';
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform:uppercase;
+  color: #16a085;
+}
+
+.text2{
+  padding: 130px 0 80px 0;
+  float: right;
+  width: 450px;
+}
+
+.text2 p{
+  margin: 0;
+  font: 12px / 24px 'Myriad Pro';
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #373737;
+}
+
+.box2 button{
+  width: 190px;
+  background: #16a085;
+  border: none;
+  border-radius: 4px;
+  font: 12px / 12px 'Gotham Rounded';
+  font-weight: bold;
+  padding: 20px 30px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  color: #fff;
+  transition: 0.7s;
+}
+
+.box2 button:hover{
+  background-color: red;
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
+.ifone{
+  float: left;
+  padding-top: 150px;
+}
+
+.box3{
+  background: #f5f6f7;
+  height: 490px;
+}
+
+.arrow {
+  margin: 40px 0;
+}
+
+.arrow img{
+  margin: 0 10px 0 0;
+}
+
+.items2, .items1{
+  display:inline-block;
+  width: 370px;
+  height: 245px;
+  margin: 0 8px 0 0;
+  float: left;
+}
+
+.items1{
+  width: 266px;
+  text-align: center;
+  display: inline-block;
+}
+
+.group{
+  margin: 40px 35px;
+}
+
+.group h4{
+  margin: 0;
+  font: 16px / 24px 'Gotham Rounded';
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #373737;
+  margin: 30px  0 25px 0;
+}
+
+.group p{
+  margin: 0;
+  font: 10px / 24px 'Gotham Rounded';
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #373737;
+  line-height: normal;
+}
+
+.items2 img{
+  width: 370px;
+  height: 245px;
+  object-fit: cover;
+}
+
+.items2:nth-child(3){
+  margin: 0;
+  float: right;
+}
+
+.arrow2{
+  text-align: right;
+  padding: 100px 0 10px 0;
+}
+
+.arrow2 img{
+  margin: 0 10px 0 0;
+}
+
+.arrow2 img:last-child{
+  margin: 0;
+}
+
+.box4{
+  height: 790px;
+  background: url('../images/fon2.jpg') no-repeat top center;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+}
+
+.block h2{
+  margin: 0 0 25px 0;
+  font: 24px / 46px 'Gotham Rounded';
+  font-weight: bold;
+  letter-spacing: 6px;
+  color:#ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 350px;
+
+}
+
+.block input{
+  height: 60px;
+  width: 280px;
+  float: inherit;
+  font: 16px 'Gotham Rounded';
+  letter-spacing: 3px;
+  font-weight: lighter;
+  color: #373737;
+  text-transform: uppercase;
+  display: inline-block;
+  float: left;
+  padding: 0;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.check button{
+  background: #16a085;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  height: 60px;
+  width: 60px;
+  float: left;
+  display: inline-block;
+  transition: 0.7s;
+}
+
+.check button:hover{
+  background-color: red;
+  transition: 0.7s;
+}
+
+.check{
+  margin: 0 auto;
+  width: 400px;
+}
+
+.box5{
+  text-align: center;
+  background: #f5f6f7;
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+
+.box5 h4{
+font: 20px 'Gotham Rounded';
+font-weight: bold;
+text-transform: uppercase;
+color: #373737;
+margin-bottom: 10px;
+letter-spacing: 3px;
+}
+
+.box5 p{
+font: 12px 'Gotham Rounded';
+font-weight: 100;
+line-height: 22px;
+text-transform: uppercase;
+color: #373737;
+letter-spacing: 3px;
+margin-bottom: 45px;
+}
+
+.market{
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  display: inline-block;
+  width: 625px;
+}
+
+.market .button1 .mini button{
+  margin-right: 25px;
+}
+
+.market .button1 button, .market .button2 button{
+  height: 56px;
+  background: #1abc9c;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font: 16px  'Gotham Rounded';
+  font-weight: bold;
+  padding: 10px 30px;
+  letter-spacing: 3px;
+  margin: 0 auto;
+  transition: 0.7s;
+  text-transform: uppercase;
+  display: inline-block;
+  float: left;
+  text-align: left;
+  width: 240px;
+  transition: 0.7s;
+}
+
+.market .button1 button:hover + .mini button, .market .button2 button:hover + .mini button{
+  background-color: #9b0000;
+  transition: 0.7s;
+}
+
+.market .button1 button:hover, .market .button2 button:hover{
+  background-color: #ff0000;
+  transition: 0.7s;
+}
+
+
+.market .button1 .mini button , .market .button2 .mini button {
+  background: #16a085;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  display: inline-block;
+  width: 56px;
+  padding: 0;
+  text-align: center;
+  transition: 0.7s;
+}
+
+.market img{
+  margin: 0;
+}
+
+footer .links{
+  display: inline-block;
+}
+
+footer .links nav{
+  padding-top: 40px;
+}
+
+footer .links nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+footer .links nav ul li{
+  margin: 0 ;
+  display: inline-block;
+}
+
+footer .links nav ul li p{
+margin: 0 auto;
+}
+
+footer .links nav ul li a{
+  float: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #373737;
+  font: 14px / 14px 'Gotham Rounded';
+  display: inline-block;
+  font-weight: normal;
+  transition: 0.7s;
+  letter-spacing: 2px;
+}
+
+footer .links nav ul li a:hover{
+  color: #ff0000;
+  transition: 0.7s;
+}
+
+ footer .links p{
+   display: inline-block;
+   margin: 3px 3px ;
+   vertical-align: bottom;
+   color: #16a085;
+ }
+
+footer .copyright p{
+   color: #373737;
+   font: 14px / 14px 'Gotham Rounded';
+   font-weight: normal;
+   letter-spacing: 2px;
+ }
+
+footer{
+padding-bottom: 25px;
+}
+
+footer .container .logo{
+   float:right;
+   display: inline-block;
+   margin-top: 40px;
+ }
