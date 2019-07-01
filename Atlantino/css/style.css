@@ -1,0 +1,369 @@
+@font-face {
+  font-family: "TrajanPro-Regular";
+  src: url("../fonts/TrajanPro-Regular.ttf") format("truetype");
+}
+/* variables */
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+}
+
+.home {
+  background: #EBEBEB url("../img/home-bg.jpg") no-repeat center bottom/contain;
+}
+
+.bio {
+  background: #ffffff url("../img/bio-bg.jpg") no-repeat right bottom/contain;
+}
+
+.video {
+  background: #ffff url("../img/video-bg.jpg") no-repeat left bottom/contain;
+}
+
+.music {
+  background: #fff url("../img/music-bg.jpg") no-repeat left bottom/contain;
+}
+
+.logo {
+  background: url("../img/logo.png") no-repeat center center/cover;
+  width: 104px;
+  height: 120px;
+  position: absolute;
+  top: 23px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.atlantino {
+  background: url("../img/atlantino.png") no-repeat center center;
+  width: 515px;
+  height: 60px;
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  transition: 0.5s;
+  box-shadow: 2px -2px 23px -1px #d9d9d9;
+}
+#sideNav.opened {
+  width: 200px;
+}
+#sideNav .list-wrap {
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#sideNav .list-wrap li {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  display: table-row;
+  vertical-align: middle;
+}
+#sideNav .list-wrap li a {
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+  width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-family: TrajanPro-Regular, sans-serif;
+  transition: 0.5s;
+}
+#sideNav .list-wrap li a:hover {
+  color: #00bf9b;
+  transition: 0.5s;
+}
+#sideNav .list-wrap li.active a {
+  color: #00bf9b;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+}
+header .nav-button {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background: url("../img/svg/navigation.svg") no-repeat center center;
+  cursor: pointer;
+  float: left;
+  vertical-align: middle;
+  margin-left: 32px;
+  margin-top: 27px;
+}
+header .nav-button:hover {
+  background: url("../img/svg/navigation-hover.svg") no-repeat center center;
+}
+header .social-music-block {
+  float: right;
+  position: relative;
+}
+header .social-music-block .buy-music-button:hover + .music-social-icons, header .social-music-block .music-social-icons:hover {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+header .social-music-block .buy-music-button {
+  display: block;
+  text-decoration: none;
+  text-align: right;
+  margin-top: 40px;
+  margin-right: 45px;
+  font-family: TrajanPro-Regular;
+  font-size: 14px;
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+header .social-music-block .buy-music-button:hover {
+  color: #00bf9b;
+}
+header .social-music-block .buy-music-button .music-icon {
+  display: inline-block;
+  background: url("../img/music-ico.png") no-repeat center center;
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+header .social-music-block .music-social-icons {
+  position: absolute;
+  margin: 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  visibility: hidden;
+  padding: 0px;
+  right: 45px;
+  top: 60px;
+  padding-top: 15px;
+}
+header .social-music-block .music-social-icons li {
+  list-style: none;
+  height: 35px;
+}
+header .social-music-block .music-social-icons li:hover a {
+  color: #00bf9b;
+}
+header .social-music-block .music-social-icons li a {
+  font-family: TrajanPro-Regular;
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+  text-align: right;
+  display: block;
+}
+header .social-music-block .music-social-icons li .spotify {
+  background: url("../img/svg/spotify.svg") no-repeat center center;
+}
+header .social-music-block .music-social-icons li .soundcloud {
+  background: url("../img/svg/soundcloud.svg") no-repeat center center;
+}
+header .social-music-block .music-social-icons li .one-icon {
+  background-size: 25px 25px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+header .social-music-block .music-social-icons li .social-title {
+  display: inline-block;
+  line-height: 26px;
+}
+
+.social-icons {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+}
+.social-icons i {
+  width: 34px;
+  height: 34px;
+  display: block;
+  margin-bottom: 12px;
+  border-radius: 50%;
+}
+.social-icons a:last-child i {
+  margin-bottom: 0;
+}
+.social-icons .facebook {
+  background: url("../img/svg/facebook.svg") no-repeat center/cover;
+}
+.social-icons .facebook:hover {
+  background: url("../img/svg/facebook-hover.svg") no-repeat center/cover;
+}
+.social-icons .twitter {
+  background: url("../img/svg/twitter.svg") no-repeat center/cover;
+}
+.social-icons .twitter:hover {
+  background: url("../img/svg/twitter-hover.svg") no-repeat center/cover;
+}
+.social-icons .instagram {
+  background: url("../img/svg/instagram.svg") no-repeat center/cover;
+}
+.social-icons .instagram:hover {
+  background: url("../img/svg/instagram-hover.svg") no-repeat center/cover;
+}
+.social-icons .youtube {
+  background: url("../img/svg/youtube.svg") no-repeat center/cover;
+}
+.social-icons .youtube:hover {
+  background: url("../img/svg/youtube-hover.svg") no-repeat center/cover;
+}
+
+.bio-text {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 55px;
+  bottom: 40px;
+}
+.bio-text p {
+  margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+.slider {
+  height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 20%;
+}
+.slider .vertical-slider div {
+  bacground: #e6e6e6;
+  width: 309px;
+  margin-bottom: 50px;
+}
+.slider .vertical-slider div:last-child {
+  margin-bottom: 0;
+}
+
+.video-block {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 300px;
+  border: 1px #bfbfbf solid;
+  box-shadow: #f7f7f7 0 0 0 15px;
+}
+
+.partial {
+  display: none;
+}
+.partial#home {
+  display: block;
+}
+
+.cssload-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid #00bf9b;
+  border-left-color: rgba(0, 0, 0, 0.98);
+  border-radius: 974px;
+  -o-border-radius: 974px;
+  -ms-border-radius: 974px;
+  -webkit-border-radius: 974px;
+  -moz-border-radius: 974px;
+}
+
+.cssload-whirlpool {
+  margin: -24px 0 0 -24px;
+  height: 49px;
+  width: 49px;
+  animation: cssload-rotate 1150ms linear infinite;
+  -o-animation: cssload-rotate 1150ms linear infinite;
+  -ms-animation: cssload-rotate 1150ms linear infinite;
+  -webkit-animation: cssload-rotate 1150ms linear infinite;
+  -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+  content: "";
+  margin: -22px 0 0 -22px;
+  height: 43px;
+  width: 43px;
+  animation: cssload-rotate 1150ms linear infinite;
+  -o-animation: cssload-rotate 1150ms linear infinite;
+  -ms-animation: cssload-rotate 1150ms linear infinite;
+  -webkit-animation: cssload-rotate 1150ms linear infinite;
+  -moz-animation: cssload-rotate 1150ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+  content: "";
+  margin: -28px 0 0 -28px;
+  height: 55px;
+  width: 55px;
+  animation: cssload-rotate 2300ms linear infinite;
+  -o-animation: cssload-rotate 2300ms linear infinite;
+  -ms-animation: cssload-rotate 2300ms linear infinite;
+  -webkit-animation: cssload-rotate 2300ms linear infinite;
+  -moz-animation: cssload-rotate 2300ms linear infinite;
+}
+
+@keyframes cssload-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes cssload-rotate {
+  100% {
+    -o-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes cssload-rotate {
+  100% {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes cssload-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes cssload-rotate {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
